@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="estilo.css"> 
+        <title>Programa Caneta PHP Poo</title>
+        
+         
+    </head>
+    <body>
+        <div id = "interface">
+		<header id ="cabecalho">
+			<hgroup>
+				<h1>Site Caneta</h1>
+                                <h2>POO em PHP</h2>
+			</hgroup>						
+		</header>
+            
+            <form method="get" id = "formulario" action ="page.php">
+                <fieldset><legend><h2>Criar nova caneta</h2></legend>
+                <p><label for="tipoC">Tipo</label>               
+                    <input type="text" id="tipoC" name="tipo" size = "10" min="5" max="15" placeholder="Bic" required></p>
+                <p><label for="corC">Cor</label>                
+                    <input type="color" id="corC" name="cor" size = "10" min="5" max="15" placeholder="Azul" ></p>
+                <p><label for="pontaC">Ponta</label>                
+                    <select name = "ponta" id="pontaC">
+                        <option value="5">5pt</option>
+                        <option value="10">10pt</option>
+                        <option value="15">15pt</option>
+                        <option value="20">20pt</option>
+                        <option value="40">40pt</option>
+                    </select>
+                <p><input type ="submit" class="button" value="Criar Caneta"></p>
+                </fieldset>
+                
+                
+            </form>
+            <footer id= "rodape">
+			<p>2020 - by Leandro Marson Ribeiro<br>
+            </footer> 
+        </div>       
+    </body>
+</html>
+
